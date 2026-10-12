@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px;
+    display: flex;              /* Flexbox */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav {
+    display: flex;              /* Flexbox */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #172554;
+    margin-bottom: 25px;
+}
+
+.home {
+    min-height: 350px;
+    background: #dbeafe;
+    display: flex;              /* Flexbox */
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.home span {
+    color: #2563eb;
+}
+
+.home p {
+    margin: 20px 0;
+}
+
+.btn, button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS Grid for skills, projects and education */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(200px, 1fr)
+    );
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #0002;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;              /* Flexbox */
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 27px;
+    }
+}
